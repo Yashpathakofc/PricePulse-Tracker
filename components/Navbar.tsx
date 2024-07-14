@@ -2,8 +2,8 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 const navIcons=[
-    {src:'/assets/icons/logo.svg',alt:'search'},
-    {src:'/assets/icons/black-heart.svg',alt:'search'},
+    {src:'/assets/icons/logo.png',alt:'search'},
+    {src:'/assets/icons/heart.png',alt:'search'},
     {src:'/assets/icons/user.svg',alt:'user'}
 
 ]
@@ -13,13 +13,13 @@ const Navbar = () => {
     <nav className="nav">
         <Link href="/" className="flex items-center gap-1">
         <Image 
-            src="/assets/icons/logo.svg"
-            width={27}
-            height={27} 
+            src="/assets/icons/logo.png"
+            width={30}
+            height={30} 
             alt="logo"
         />
-        <p className="nav-logo">
-            Price<span className='text-primary'>Pulse</span>
+        <p className="nav-logo text-medium">
+            Price<span className='text-brown'>Pulse</span>
         </p>
         </Link>
         <div className="flex items-center gap-5">
@@ -31,8 +31,6 @@ const Navbar = () => {
             height={28}
             className='object-contain'
             />
-
-
         ))}
         </div>
 

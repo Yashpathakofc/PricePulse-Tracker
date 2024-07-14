@@ -1,4 +1,3 @@
-
 import Modal from "@/components/Modal";
 import PriceInfoCard from "@/components/PriceInfoCard";
 import ProductCard from "@/components/ProductCard";
@@ -152,7 +151,7 @@ const ProductDetails = async ({ params: { id } }: Props) => {
             </div>
           </div>
 
-          <Modal productId={id} />
+          <Modal productId={id}/>
         </div>
       </div>
 
@@ -195,5 +194,6 @@ const ProductDetails = async ({ params: { id } }: Props) => {
     </div>
   )
 }
+
 
 export default ProductDetails

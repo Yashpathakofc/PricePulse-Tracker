@@ -12,6 +12,7 @@
 @layer base {
   body {
     @apply font-inter;
+    
   }
 }
 
@@ -29,7 +30,7 @@
   }
 
   .small-text {
-    @apply flex gap-2 text-sm font-medium text-primary;
+    @apply flex gap-2 text-sm font-semibold text-orange;
   }
 
   .paragraph-text {
@@ -39,7 +40,15 @@
   .hero-carousel {
     @apply relative sm:px-10 py-5 sm:pt-20 pb-5 max-w-[560px] h-[700px] w-full bg-[#F2F4F7] rounded-[30px] sm:mx-auto;
   }
-
+  .text-gold {
+    color: rgb(241, 149, 11);
+  }
+  .text-orange{
+      color:orangered;
+    }
+  .text-brown{
+    color:rgb(239, 141, 55);
+  }
   .carousel {
     @apply flex flex-col-reverse h-[700px];
   }

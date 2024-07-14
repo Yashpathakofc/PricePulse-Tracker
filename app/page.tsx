@@ -11,7 +11,7 @@ const Home =async () => {
     <section className="px-6 md:px-20 py-24">
       <div className="flex max-xl:flaz-col gap-16">
         <div className='flex flex-col justify-center'>
-          <p className="small-text">
+          <p className="small-text text-brown">
             An AI enabled shopping solution:
             <Image
             src="/assets/icons/arrow-right.svg"
@@ -21,11 +21,10 @@ const Home =async () => {
             />
           </p>
           <h1 className='head-text'>
-            Unleash the power of <span className='text-primary'>PricePulse</span>
+            Unleash the power of <span className='text-brown'>PricePulse :)</span>
           </h1>
-          <p className='mt-6'>
-          Powerful, self-serve product and 
-          growth analytics to help you convert, engage, and retain more.
+          <p className="mt-5">
+          Stay ahead with real-time e-commerce price tracking and unbeatable savings!
           </p>
           <SearchBar/>
         </div>
@@ -33,8 +32,8 @@ const Home =async () => {
       </div>
       </section>
       <section className="trending-section">
-        <h2 className="section-text">Trending</h2>
-        <div className='flex flex-wrap gap-x-8 gap-y-16'>
+        <h2 className="section-text">Trending<span className="text-brown"> Now:</span></h2>
+        <div className='flex flex-wrap gap-x-6 gap-y-12'>
           {allProducts.map((product)=>
               <ProductCard key={product._id} product={product}/>
           )}
